@@ -12,7 +12,6 @@ import (
 
 func DeclareQueue(name string, durable bool, autoDelete bool, exclusive bool, noWait bool, args amqp.Table) (*amqp.Channel, *amqp.Connection, error) {
 	url := viper.GetString("RABBIT_URL")
-	fmt.Println(url)
 	conn, err := amqp.Dial(url)
 	if err != nil {
 		return nil, nil, err
