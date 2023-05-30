@@ -3,7 +3,6 @@ package RabbitMQ
 import (
 	"context"
 	"errors"
-	"fmt"
 	amqp "github.com/rabbitmq/amqp091-go"
 	"github.com/spf13/viper"
 	"log"
